@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./indess.css">
+    <title>Document</title>
+    <style>
+/* Header Search */
+.header-box {
+  width: 100%;
+}
+
+.header-box .search-box {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  box-shadow: 0 5px 10px rgb(68, 72, 69);
+  border-radius: 25px;
+  transition: all .45s ease;
+  justify-content: center;
+}
+
+#check:checked ~ .search-box {
+  width: 380px;
+}
+
+.search-box input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  background: #fff;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.search-box .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  background: #00483d;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+#check:checked ~ .search-box .icon {
+  background: #00483d;
+  color: #fff;
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+}
+
+#check {
+  display: none;
+}
+
+.header-box{
+  position: fixed;
+  margin-top: 60px;
+  padding: 0 20px;
+  z-index: 1;
+}
+    </style>
+</head>
+<body>
+  <div class="header-box">
+    <input type="checkbox" id="check">
+    <div class="search-box">
+      <input type="text" placeholder="Tìm kiếm...">
+      <label for="check" class="icon"><i class="fas fa-search"></i></label>
+    </div>
+  </div>
+    <div class="container-flash-sale">
+        <div class="flash-detail">
+          <div class="flash-sale--title">
+            <h3>
+              FLASH SALE ONLINE
+            </h3>
+          </div>
+          <div class="btn-filter">
+            <button class="active">Điện thoại/Tablet</button>
+            <button>Laptop/Màn hình/Tivi</button>
+            <button>Đồng hồ/Phụ kiện/khác</button>
+          </div>
+        </div>
+        <div class="show-flashsale">
+          <div class="hiden-flashsale" id="wrapper">
+            <div class="item-sale">
+              <div class="item-sale__img">
+                <img
+                  src="./images/imge-flashsale/1.webp"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+              <div class="item-sale__title">
+                <h5>Samsung Galaxy S22 Ultra - 8GB/128GB - Chính hãng</h5>
+              </div>
+            </div>
+            <!-------------------------------------->
+            <div class="item-sale">
+              <div class="item-sale__img">
+                <img
+                  src="./images/imge-flashsale/2.webp"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+              <div class="item-sale__title">
+                <h5>Samsung Galaxy S22 Ultra - 8GB/128GB - Chính hãng</h5>
+              </div>
+            </div>
+            <!-------------------------------------->
+            <div class="item-sale">
+              <div class="item-sale__img">
+                <img
+                  src="./images/imge-flashsale/1.webp"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+              <div class="item-sale__title">
+                <h5>Samsung Galaxy S22 Ultra - 8GB/128GB - Chính hãng</h5>
+              </div>
+            </div>
+            <!-------------------------------------->
+            <div class="item-sale" style="width: 220px">
+              <div class="item-sale__img">
+                <img
+                  src="./images/imge-flashsale/1.webp"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+              <div class="item-sale__title">
+                <h5>Samsung Galaxy S22 Ultra - 8GB/128GB - Chính hãng</h5>
+              </div>
+            </div>
+            <!-------------------------------------->
+            <div class="item-sale">
+              <div class="item-sale__img">
+                <img
+                  src="./images/imge-flashsale/1.webp"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+              <div class="item-sale__title">
+                <h5>Samsung Galaxy S22 Ultra - 8GB/128GB - Chính hãng</h5>
+              </div>
+            </div>
+            <!-------------------------------------->
+            <div class="item-sale">
+              <div class="item-sale__img">
+                <img
+                  src="./images/imge-flashsale/1.webp"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+              <div class="item-sale__title">
+                <h5>Samsung Galaxy S22 Ultra - 8GB/128GB - Chính hãng</h5>
+              </div>
+            </div>
+            <!-------------------------------------->
+            <div class="item-sale">
+              <div class="item-sale__img">
+                <img
+                  src="./images/imge-flashsale/1.webp"
+                  draggable="false"
+                  alt=""
+                />
+              </div>
+              <div class="item-sale__title">
+                <h5>Samsung Galaxy S22 Ultra - 8GB/128GB - Chính hãng</h5>
+              </div>
+            </div>
+            <!-------------------------------------->
+            <!--Next prev-->
+          </div>
+          <div class="prev--flash circle">
+            <i class="fa-solid fa-caret-left"></i>
+          </div>
+          <div class="next--flash circle">
+            <i class="fa-solid fa-caret-right"></i>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính điểm trung bình và kết quả</title>
+</head>
+<body>
+    <!-- Bai 5 -->
+    <p>Cho diem van = 5, diem toan = 6</p>
+    <p id="result"></p>
+    <script>
+      function tinhdtb() {
+        var van = 5;
+        var toan = 6;
+        var dtb = (van + toan) / 2;
+        var kq = dtb >= 5 ? "Đau" : "Rot";
+        document.getElementById("result").textContent ="Diem trung binh: " + dtb + " - Ket qua: " + kq;
+      }
+      tinhdtb();
+    </script>
+</body>
+</html>

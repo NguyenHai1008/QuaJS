@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hiển thị Ngày và Giờ</title>
+</head>
+<body>
+    <p id="datetime"></p>
+
+    <script>
+        function displayDateTime() {
+            var now = new Date();
+
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            var datetimeString = day + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
+            
+            document.getElementById("datetime").textContent = datetimeString;
+        }
+        displayDateTime();
+    </script>
+</body>
+</html>

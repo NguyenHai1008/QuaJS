@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thiết kế website</title>
+</head>
+<body>
+    <!-- Bai 4_2 -->
+    <h1>THIẾT KẾ WEBSITE</h1>
+    <p>Ngôn ngữ HTML</p>
+    <p id="css">Định dạng CSS</p>
+    <p id="js">Ngôn ngữ lập trình Javascript</p>
+    <button onclick="changeText()">Thay đổi màu và căn giữa</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("css").style.color = "red";
+            document.getElementById("js").style.color = "blue";
+            document.getElementById("css").style.textAlign = "center";
+            document.getElementById("js").style.textAlign = "center";
+        }
+    </script>
+</body>
+</html>

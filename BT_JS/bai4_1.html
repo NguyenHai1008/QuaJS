@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lấy giá trị từ thẻ</title>
+</head>
+<body>
+    <!-- Bai 4_1 -->
+    <h1>THIẾT KẾ WEBSITE</h1>
+    <p>Ngôn ngữ HTML</p>
+    <p id="css">Định dạng CSS</p>
+    <p id="js">Ngôn ngữ lập trình Javascript</p>
+    <button onclick="layVaInGiaTri()">Lấy giá trị</button>
+
+    <script>
+        function layVaInGiaTri() {
+            var js = document.getElementById("js");
+            var giaTri = js.textContent;
+            alert("Giá trị là: " + giaTri);
+        }
+    </script>
+</body>
+</html>

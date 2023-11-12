@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+    <h1>Tính điểm trung bình và kết quả đậu rớt</h1>
+
+    <script>
+        var diemVan = parseFloat(prompt("Nhập điểm môn văn: "));
+        var diemToan = parseFloat(prompt("Nhập điểm môn toán: "));
+        var diemTrungBinh = (diemVan + diemToan) / 2;
+        console.log(diemTrungBinh)
+        function DTB(diemVan, diemToan) {
+            if (diemVan < 0 || diemVan > 10 || diemToan < 0 || diemToan > 10) {
+                return "Điểm không hợp lệ";
+            }
+            if (diemTrungBinh >= 5) {
+                return "Đậu";
+            } else {
+                return "Rớt";
+            }
+        }
+        var ketQua = DTB(diemVan, diemToan);
+        document.write("Điểm môn văn: " + diemVan + "<br>");
+        document.write("Điểm môn toán: " + diemToan + "<br>");
+        document.write("Điểm trung bình: " + diemTrungBinh + "<br>");
+        document.write("Kết quả: " + ketQua);
+    </script>
+</body>
+</html>

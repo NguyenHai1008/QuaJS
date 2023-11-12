@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thay đổi giá trị thẻ</title>
+</head>
+<body>
+    <h1>THIẾT KẾ WEBSITE</h1>
+    <p>Ngôn ngữ HTML</p>
+    <p id="css">Định dạng CSS</p>
+    <p id="js">Ngôn ngữ lập trình Javascript</p>
+    <button onclick="thayDoiGiaTri()">Thay đổi</button>
+
+    <script>
+        function thayDoiGiaTri() {
+            var css = document.getElementById("css");
+            var js = document.getElementById("js");
+            css.innerHTML = "CSS căn bản";
+            js.innerHTML = "Javascript căn bản";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Đăng Nhập</title>
+</head>
+<body>
+    <h2 style="text-align: center;color: aqua;">Đăng Nhập</h2>
+        <table border="1" align="center" cellpadding="0" cellspacing="0" style="background-color:#00483d;color: #fff">
+            <tr>
+                <td>Mã người dùng</td>
+                <td><input type="text" id="username" required></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td><input type="password" id="password" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="button" onclick="checkLogin()">Đăng Nhập</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <span id="message" style="color: red;"></span>
+                </td>
+            </tr>
+        </table>
+
+    <script>
+        function checkLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "" || password === "") {
+                document.getElementById("message").textContent = "Vui lòng nhập tên đăng nhập và mật khẩu.";
+            } else {
+                document.getElementById("message").textContent = "Đăng nhập thành công!";
+            }
+        }
+    </script>
+</body>
+</html>

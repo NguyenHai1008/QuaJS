@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lấy giá trị phần tử HTML</title>
+</head>
+<body>
+    <input type="text" id="msg" name="msg" value="Hãi">
+    <button id="welcome">Welcome</button>
+    
+    <script>
+        var msgElement = document.getElementById("msg");
+        var welcomeButton = document.getElementById("welcome");
+        welcomeButton.addEventListener("click", function() {
+            var message = msgElement.value;
+            alert("Xin chào " + message);
+        });
+    </script>
+</body>
+</html>
